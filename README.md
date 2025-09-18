@@ -51,3 +51,5 @@ After uploading the sample documents (from `sample_data/`), you can try question
 Below is a sample run of the Financial Document Q&A Assistant:
 
 ![App Screenshot](screenshot.png)
+<img width="1067" height="708" alt="image" src="https://github.com/user-attachments/assets/cc8890c0-580a-4765-a468-2fc0b936e446" />
+
