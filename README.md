@@ -46,3 +46,8 @@ After uploading the sample documents (from `sample_data/`), you can try question
 **Cash Flow Statement**
 - What is the closing cash balance?
 - How much cash came from operating activities?
+## Demo Screenshot
+
+Below is a sample run of the Financial Document Q&A Assistant:
+
+![App Screenshot](screenshot.png)
