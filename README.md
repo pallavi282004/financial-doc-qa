@@ -30,3 +30,19 @@ pandas
 openpyxl
 ollama
 
+## Example Questions to Try
+
+After uploading the sample documents (from `sample_data/`), you can try questions like:
+
+**Income Statement**
+- What is the net profit?
+- Show me the revenue in 2023.
+- What are the operating expenses?
+
+**Balance Sheet**
+- What are the total assets in 2022?
+- List the cash balance in 2023.
+
+**Cash Flow Statement**
+- What is the closing cash balance?
+- How much cash came from operating activities?

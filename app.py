@@ -1,7 +1,3 @@
-
-
-
-
 import streamlit as st
 from modules import parser_pdf, parser_excel, qa_engine
 import pandas as pd
@@ -18,12 +14,33 @@ if uploaded_file:
     else:
         data = parser_excel.extract_excel(uploaded_file)
     
-    st.success("Document processed successfully!")
+    st.success(" Document processed successfully!")
     st.dataframe(data.head())
 
     st.subheader("Ask a Question")
     query = st.text_input("Enter your question:")
+
     
+    with st.expander(" Example Questions to Try"):
+        st.write("""
+        **Income Statement:**
+        - What is the net profit?
+        - Show me the revenue in 2023.
+        - What are the operating expenses?
+
+        **Balance Sheet:**
+        - What are the total assets in 2022?
+        - List the cash balance in 2023.
+
+        **Cash Flow Statement:**
+        - What is the closing cash balance?
+        - How much cash came from operating activities?
+        """)
+
     if query:
         response = qa_engine.answer_query(query, data)
         st.write("**Answer:**", response)
+
+
+
+
